@@ -1,0 +1,182 @@
+﻿.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+/* close commented backslash hack */
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    display: flex;
+}
+
+#app {
+    display: flex;
+    flex: 1;
+    width:100%;
+}
+
+.ReactModal__Overlay {
+    z-index: 10000000;
+}
+
+.wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.graphiql-wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.tab-bar {
+    width: 100%;
+    height: 46px;
+}
+
+.tab-bar-inner {
+    width: auto;
+    max-width: 10000px;
+    display: flex;
+    height: 45px;
+    border-bottom: solid 1px #efefef;
+    background-color: #fcfcfc;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.tab-bar li {
+    display: flex;
+    list-style-type: none;
+    flex-shrink: 0;
+}
+
+    .tab-bar li > a {
+        width: 100%;
+        color: #999;
+        font-size: .8em;
+        background-color: #fcfcfc;
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+        text-align: center;
+        border-right: solid 1px #efefef;
+    }
+
+    .tab-bar li:last-child > a {
+        /*border-right: none;*/
+    }
+
+    .tab-bar li.active {
+        height: 47px;
+    }
+
+        .tab-bar li.active > a {
+            color: black;
+            background-color: white;
+            border-bottom: none;
+        }
+
+.tabs {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.tabs__tab {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+#graphiql-container {
+    flex: 1;
+}
+
+/* Pure.css overrides */
+.pure-form {
+    margin: 1em 0.2em;
+}
+
+    .pure-form label {
+        margin: .5em 0.5em .2em;
+    }
+
+/* Button customization */
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 2px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+.pure-table {
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+
+    .pure-table thead {
+        background-color: white;
+    }
+
+    .pure-table th {
+        border-top: 1px solid #eceeef;
+    }
+
+.pure-table-horizontal tr {
+    border-top: 1px solid #eceeef;
+}
+
+.pure-table thead th {
+    border-bottom: 2px solid #eceeef;
+}
+
+.edit-headers-button {
+    margin-left: 1em;
+    float: right;
+}
